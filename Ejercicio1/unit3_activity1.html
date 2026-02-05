@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/css/style.css">
+    <link rel="stylesheet" href="./dist/css/bootstrap-icons.css">
 </head>
 
 <body class="vh-100">
@@ -97,11 +98,34 @@
                 </main>
             </div>
         </div>
+
+        <div class="row g-0 p-0">
+            <div class="col p-3 bg-secondary d-flex flex-column align-items-center justify-content-center w-50">
+                
+                    <p class="h2">Contacta con nosotros!</p>
+                    <form id="formularioSub" class="w-50">
+                        <label class="bi bi-briefcase" for="correoInput"></i> Correo</label>
+                        <input type="email" id="correoInput" required class="form-control" id="email"
+                            placeholder="Introduce tu correo aquí" />
+                        <div class="invalid-feedback">El correo no tiene un formato correcto</div>
+                        <div class="valid-feedback">Correo detectado correctamente</div>
+                        <label for="msgInput">Mensaje</label>
+                        <textarea type="text" id="msgInput" required class="form-control" id="email"
+                            placeholder="Introduce tu mensaje aquí (Máximo de 200 palabras)"></textarea>
+                        <div class="invalid-feedback">El mensaje es demasiado largo</div>
+                        <div class="valid-feedback">Todo correcto</div>
+                        <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+                    </form>
+
+            </div>
+        </div>
+
         <!-- #region-->
         <div class="row g-0 p-0">
             <div class="col">
                 <footer class="m-0 p-2 bg-primary  me-2 rounded-end-pill">
-                    <p class="fw-semibold text-bg-primary h5 h-100 m-0">&copy; 2024 Online Store. All rights reserved.</p>
+                    <p class="fw-semibold text-bg-primary h5 h-100 m-0">&copy; 2024 Online Store. All rights reserved.
+                    </p>
                 </footer>
             </div>
         </div>
